@@ -7,7 +7,54 @@ import {
   FaDownload,
 } from "react-icons/fa";
 
+import { useRef, useState } from "react";
+
+
 const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
+
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!form.current) return;
+
+    setLoading(true);
+    setSuccess("");
+    setError("");
+
+    try {
+      // Simulate sending
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+
+      setSuccess(
+        "Thank you for reaching out! Your message has been sent successfully. I'll get back to you as soon as possible."
+      );
+
+      form.current.reset();
+
+      setTimeout(() => {
+        setSuccess("");
+      }, 5000);
+    } catch (err) {
+      console.error(err);
+
+      setError(
+        "Sorry, something went wrong while sending your message. Please try again later."
+      );
+
+      setTimeout(() => {
+        setError("");
+      }, 5000);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+
   return (
     <section
       id="contact"
@@ -95,7 +142,11 @@ const Contact = () => {
 
           {/* Right */}
 
-         <form className="space-y-6">
+         <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="space-y-6"
+      >
 
   {/* Name */}
   <div>
@@ -165,13 +216,20 @@ const Contact = () => {
     />
   </div>
 
-  <button
-    type="submit"
-    className="w-full rounded-xl bg-violet-600 px-8 py-4 font-semibold text-white transition hover:bg-violet-700"
-  >
-    Send Message
-  </button>
+ <button
+  type="submit"
+  disabled={loading}
+  className="flex w-full items-center justify-center rounded-xl bg-violet-600 px-6 py-4 font-semibold text-white transition hover:bg-violet-700 disabled:cursor-not-allowed disabled:opacity-70"
+>
+  {loading ? "Sending..." : "Send Message"}
+</button>
+{success && (
+  <p className="text-green-500 mt-4">{success}</p>
+)}
 
+{error && (
+  <p className="text-red-500 mt-4">{error}</p>
+)}
 </form>
 
         </div>
