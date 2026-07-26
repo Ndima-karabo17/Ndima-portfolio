@@ -1,4 +1,12 @@
-const Project = () => {
-    return <section>Project</section>
+const Projects = () => {
+  return (
+    <section
+      id="projects"
+      className="min-h-screen flex items-center justify-center"
+    >
+      <h2 className="text-4xl font-bold">Projects</h2>
+    </section>
+  );
 };
-export default Project;
+
+export default Projects;

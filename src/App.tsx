@@ -14,7 +14,7 @@ function App() {
     <div className="min-h-screen bg-slate-950 text-white">
       <Navbar />
 
-      <main>
+      <main className="pt-20">
         <Hero />
         <About />
         <Skills />

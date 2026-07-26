@@ -3,7 +3,7 @@ import SocialLinks from "../components/ui/SocialLinks";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center">
+    <section id="home" className="min-h-screen flex items-center">
       <div className="mx-auto max-w-7xl px-6 grid gap-12 md:grid-cols-2 items-center">
 
         <div>
