@@ -1,6 +1,6 @@
 import Button from "../components/ui/Button";
 import SocialLinks from "../components/ui/SocialLinks";
-
+import Profile from '../assets/images/profile.jpeg'
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center">
@@ -8,13 +8,12 @@ const Hero = () => {
 
         <div>
           <p className="text-violet-400 font-medium">
-            👋 Hello, I'm
+             Hello, I'm
           </p>
 
           <h1 className="mt-4 text-5xl font-extrabold md:text-7xl">
-            Karabo
-            <br />
-            Ndima
+            Mhangwani Ndima
+            
           </h1>
 
           <h2 className="mt-4 text-2xl font-semibold text-slate-300">
@@ -46,10 +45,12 @@ const Hero = () => {
         </div>
 
         <div className="flex justify-center">
-          <div className="flex h-80 w-80 items-center justify-center rounded-full bg-violet-600/20 text-8xl">
-            👨‍💻
-          </div>
-        </div>
+  <img
+    src={Profile}
+    alt="Ndima's Profile"
+    className="h-80 w-80 rounded-full object-cover"
+  />
+</div>
 
       </div>
     </section>
