@@ -4,4 +4,6 @@ export interface Experience {
   company: string;
   period: string;
   description: string[];
+  certificate?: string;
+  logo?: string;
 }
