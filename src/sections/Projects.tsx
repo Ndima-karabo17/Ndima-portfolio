@@ -25,9 +25,11 @@ const Projects = () => {
               key={project.id}
               className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-950 transition hover:-translate-y-2 hover:border-violet-500"
             >
-              <div className="flex h-52 items-center justify-center bg-slate-800 text-slate-500">
-                Project Screenshot
-              </div>
+              <img
+  src={project.image}
+  alt={project.title}
+  className="h-52 w-full object-cover transition-transform duration-300 hover:scale-105"
+/>
 
               <div className="p-6">
                 <h3 className="text-2xl font-semibold">

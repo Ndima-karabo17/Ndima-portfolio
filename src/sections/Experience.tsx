@@ -29,19 +29,7 @@ const Experience = () => {
 
                 <div className="flex items-center gap-5">
 
-                  <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-white p-3">
-                    {experience.logo ? (
-                      <img
-                        src={experience.logo}
-                        alt={experience.company}
-                        className="max-h-14 object-contain"
-                      />
-                    ) : (
-                      <span className="text-2xl font-bold text-slate-700">
-                        {experience.company.charAt(0)}
-                      </span>
-                    )}
-                  </div>
+                 
 
                   <div>
                     <h3 className="text-2xl font-bold text-white">

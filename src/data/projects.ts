@@ -1,8 +1,9 @@
 import type { Project } from "../types/project";
-
+import pic from '../assets/images/projects/library-image.png'
 export const projects: Project[] = [
   {
     id: 1,
+   
     title: "PriceCompareSA",
     description:
       "A mobile application that helps users compare grocery prices across retailers.",
@@ -32,7 +33,8 @@ export const projects: Project[] = [
     description:
       "Desktop application for managing books, members, and borrowing records.",
     technologies: ["Java", "PostgreSQL"],
-    github: "https://github.com/YOUR_USERNAME/library-system",
+    github: "https://github.com/Ndima-karabo17/LibraryManagementSystem-PostgreSQL.git",
     live: "#",
+     image: pic,
   },
 ];
