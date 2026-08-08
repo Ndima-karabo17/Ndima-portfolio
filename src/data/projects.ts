@@ -1,5 +1,6 @@
 import type { Project } from "../types/project";
 import pic from '../assets/images/projects/library-image.png'
+import pic2 from '../assets/images/projects/To-do.png'
 export const projects: Project[] = [
   {
     id: 1,
@@ -23,6 +24,7 @@ export const projects: Project[] = [
   ],
     github: "https://github.com/ndimamhangwani/week-2-to-do-app.git",
     live: "https://week-2-to-do-app.vercel.app/",
+    image: pic2,
   },
 
   {
