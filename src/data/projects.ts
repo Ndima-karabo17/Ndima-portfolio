@@ -8,23 +8,21 @@ export const projects: Project[] = [
     description:
       "A mobile application that helps users compare grocery prices across retailers.",
     technologies: ["React Native", "TypeScript", "Firebase"],
-    github: "https://github.com/YOUR_USERNAME/price-compare-sa",
-    live: "#",
+    github: "https://github.com/YOUR_USERNAME/price-compare-sa"
   },
 
   {
     id: 2,
-    title: "Hotel Booking API",
-    description:
-      "RESTful backend API for hotel reservations with authentication and booking management.",
-    technologies: [
-      "Node.js",
-      "Express",
-      "Prisma",
-      "PostgreSQL",
-    ],
-    github: "https://github.com/YOUR_USERNAME/hotel-api",
-    live: "#",
+    title: "To-Do App",
+  description:
+    "A CRUD to-do list app with inline task editing, filtering, and persistent storage using localStorage.",
+  technologies: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+  ],
+    github: "https://github.com/ndimamhangwani/week-2-to-do-app.git",
+    live: "https://week-2-to-do-app.vercel.app/",
   },
 
   {
@@ -34,7 +32,6 @@ export const projects: Project[] = [
       "Desktop application for managing books, members, and borrowing records.",
     technologies: ["Java", "PostgreSQL"],
     github: "https://github.com/Ndima-karabo17/LibraryManagementSystem-PostgreSQL.git",
-    live: "#",
      image: pic,
   },
 ];
