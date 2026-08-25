@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
-
+import cv from "../../assets/documents/Ndima_Mhangwani_CV.pdf"
 const links = [
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
@@ -35,9 +35,15 @@ const Navbar = () => {
             </li>
           ))}
 
+         
+
           <a
-            href="/resume.pdf"
+            href={cv}
+            download="Ndima_Mhangwani_CV.pdf"
+             target="_blank"
+              rel="noopener noreferrer"
             className="rounded-lg bg-violet-600 px-5 py-2 font-medium text-white transition hover:bg-violet-700"
+            
           >
             Resume
           </a>
@@ -66,13 +72,18 @@ const Navbar = () => {
             </a>
           ))}
 
-          <a
-            href="/resume.pdf"
-            className="block px-6 py-4 font-semibold text-violet-400"
-            onClick={() => setOpen(false)}
+          
+ <a
+            href={cv}
+            download="Ndima_Mhangwani_CV.pdf"
+             target="_blank"
+              rel="noopener noreferrer"
+            className="rounded-lg bg-violet-600 px-5 py-2 font-medium text-white transition hover:bg-violet-700"
+            
           >
             Resume
           </a>
+        
         </div>
       )}
     </header>
