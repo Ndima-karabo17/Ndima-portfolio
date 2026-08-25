@@ -6,7 +6,6 @@ export const experiences: Experience[] = [
     role: "Software Development Learner",
     company: "TechBridle Foundation",
     period: "Feb 2026 – Aug 2026",
-    logo: "/images/companies/techbridle.png",
     certificate: "/certificates/techbridle-certificate.pdf",
     description: [
       "Developed web APIs and applications using C# and ASP.NET Core.",
@@ -20,8 +19,7 @@ export const experiences: Experience[] = [
     role: "Software Development Trainee",
     company: "CodeTribe Academy",
     period: "Jul 2025 – Mar 2026",
-    logo: "/images/companies/codetribe.png",
-    certificate: "/certificates/codetribe-certificate.pdf",
+    certificate: "https://codetribe.mlab.co.za/verify-student/51f0d140-e957-4a2c-94e0-7b7207a741c4",
     description: [
       "Built responsive web and mobile applications using React and React Native.",
       "Developed REST APIs and integrated frontend applications with backend services.",
